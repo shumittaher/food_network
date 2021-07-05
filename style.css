@@ -1,0 +1,149 @@
+h1{
+    font-size: 4.3em;
+    color: rgb(66, 66, 66);
+}
+h2{
+    font-size: 3em;
+    color: rgb(66, 66, 66);
+}
+h3{
+    font-size: 1.6em;
+    color: gray;
+    text-align: justify;
+}
+p{
+    font-size: 1.4em;
+    color: black;
+    text-align: justify;
+    font-weight: normal;
+
+}
+body{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+
+}
+.orange{
+    color: orangered;
+}
+.half-page{
+    width: 45%;   
+    padding: 0 2%;
+}
+section{
+    display: flex;
+    padding: 0 5%;
+}
+
+#large-mid-image{
+    width: 100%;
+    height: 540px;
+    object-fit:contain;
+    margin-top: 60px;
+
+}
+
+.button{
+
+    color:white;
+    background-image: linear-gradient(orangered , salmon);
+    font-size: 1.5em;
+    padding: 20px 60px;
+    text-decoration: none;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+#top-section{
+    background-image: url(images/shapes/top_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#mid-section{
+    background-image: url(images/shapes/mid_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+.center-aligned{
+    text-align: center;
+    padding: 0 20%;
+}
+.box{
+    width: 26%;
+    margin: 2%;
+    padding: 2%;    
+    box-shadow: 0 0 10px gainsboro;
+    border-radius: 30px;
+    
+}
+.left-align{
+    text-align: left;
+}
+.recipe-title{
+
+    color: black;
+    font-size: 2.2em;
+    font-weight:900;
+}
+.resize-pic{
+    width: 100%;
+    height: 300px;
+    border-radius: 30px;
+    object-fit:cover;
+
+}
+
+#end-section{
+    box-shadow: 0 0 10px gainsboro;
+    border-radius: 30px;
+    margin: 100px 6.5%;
+}
+
+.bottomsection-text{
+
+    color: black;
+    font-size: 4em;
+    font-weight:900;
+    margin: 0;
+    text-align: center;
+        
+}
+
+.bottom-box{
+    width: 34%;
+    margin: 100px 0;
+}
+
+.bottomsection-smalltext{
+
+   
+    margin: 0;
+    text-align: center;
+
+        
+}
+
+footer{
+
+    height: 270px;
+    background-color: rgb(20, 22, 25);
+}
+footer p{
+    width: 100%;
+    text-align: center;
+    color: white;
+
+}
+
+#footer-title{
+
+    padding-top: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: 2.2em;
+    font-weight: bold;
+    }
+
+
