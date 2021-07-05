@@ -59,6 +59,7 @@ section{
     background-image: url(images/shapes/top_background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 100px;
 }
 #mid-section{
     background-image: url(images/shapes/mid_background.jpg);
@@ -114,6 +115,8 @@ section{
 .bottom-box{
     width: 34%;
     margin: 100px 0;
+    align-self: center;
+    align-content: center;
 }
 
 .bottomsection-smalltext{
@@ -144,6 +147,13 @@ footer p{
     text-align: center;
     font-size: 2.2em;
     font-weight: bold;
-    }
+}
+
+.icons{
+    width: 100%;
+    height:min-content;
+    object-fit:none;
+
+}
 
 
