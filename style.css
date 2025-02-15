@@ -316,6 +316,7 @@ section{
         border-radius: 40px;
         background: rgba(256, 256, 256, 0.9); 
         position: relative;
+        z-index: 1;
         max-width: 70%;
     }
 
@@ -354,3 +355,19 @@ section{
 
 }
 
+.floating{
+    animation: float 6s infinite;
+}
+
+@keyframes float {
+
+    0% {
+      rotate: 1.2deg;
+    }
+    50% {
+      rotate: -1.5deg;
+    }
+    100% {
+        rotate: 1.2deg;
+    }
+}
