@@ -82,6 +82,35 @@ body{
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     align-self: flex-start;
+    cursor: pointer;
+    position: relative;
+}
+
+.button::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+
+    background-color: rgba(240, 128, 128, 0.3); 
+    opacity: 0%; 
+    pointer-events: none; 
+    transition: opacity 0.3s ease; 
+    
+}
+
+.button:hover{
+    outline: 5px solid red;
+    outline-offset: -2px;
+    cursor: pointer;
+}
+
+.button:hover::before{
+    opacity: 100%;
 }
 
 img{
