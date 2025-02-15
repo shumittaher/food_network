@@ -73,7 +73,7 @@ body{
 }
 
 .button{
-    display: inline-flex;
+    display: inline-block;
     background-image: linear-gradient(orangered , salmon);
     font-size: 1.5rem;
     padding: 20px 60px;
@@ -81,6 +81,7 @@ body{
     border-bottom-right-radius: 40px;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
+    align-self: flex-start;
 }
 
 img{
@@ -119,14 +120,17 @@ section{
     margin-top: 4rem;
 }
 .transperant_box{
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     height: fit-content;
 }
 
-#mid-section{
+#mid-section {
     background-image: url(images/shapes/mid_background.jpg);
     padding-top: 10rem;
 }
+
+
 
 #mid-section .picture_section{
     display: flex;
@@ -151,6 +155,9 @@ section{
     padding: 1rem;    
     box-shadow: 0 0 10px gainsboro;
     border-radius: 30px;
+}
+.box h2{
+    font-weight:900;
 }
 
 
@@ -269,6 +276,9 @@ section{
 }
 
 @media screen and (max-width: 768px) {
+    section{
+        padding: 0 1rem;
+    }
     .picture_section{
         height: 25rem;
     }
@@ -286,6 +296,9 @@ section{
         max-width: 70%;
     }
 
+    #footer-title{
+        font-size: 1.5rem;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -312,5 +325,9 @@ section{
         width: 100%;
 
     }
+    #mid-section .button{
+        align-self: flex-end;
+    }
+
 }
 
