@@ -1,3 +1,48 @@
+
+
+footer{
+
+    height: 20rem;
+    background-color: rgb(20, 22, 25);
+}
+
+footer p{
+    width: 100%;
+    text-align: center;
+    color: white;
+
+}
+
+#footer-title{
+
+    padding-top: 5rem;
+    width: 100%;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.icons{
+    height:min-content;
+    object-fit:none;
+}
+
+
+header{
+   
+    background-color: rgb(20, 22, 25);
+    height: 5.3rem;
+    padding: 0 7rem;
+
+    
+}
+header h2{
+
+    font-size: 2.6rem;
+    margin: 0;
+    padding-top: 2.6rem;
+}
+
 h1{
     font-size: 4.3rem;
     color: rgb(66, 66, 66);
@@ -27,23 +72,7 @@ body{
     overflow-x: hidden;
 }
 
-section{
-    display: flex;
-    box-sizing: border-box;
-
-}
-
-
-.text_section{
-    padding: 0 5%;
-    text-align: left;
-    width: 50%;
-    box-sizing: border-box;
-
-}
-
 .button{
-
     display: inline-flex;
     background-image: linear-gradient(orangered , salmon);
     font-size: 1.5rem;
@@ -53,12 +82,47 @@ section{
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
 }
+
+img{
+    object-fit:cover;
+}
+
+section{
+    display: flex;
+    box-sizing: border-box;
+
+}
+
+.text_section{
+    width: 50%;
+    box-sizing: border-box;
+}
+
+
+.picture_section{
+    height: 70rem;
+    width: 50%;
+    box-sizing: border-box;
+}
+
 #top-section{
     background-image: url(images/shapes/top_background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 6rem;
 }
+
+#top-section>.text_section{
+    display: flex;
+    justify-content: end;
+}
+#top-section>.text_section>div{
+    display: inline-block;
+    height: fit-content;
+    margin-top: 4rem;
+}
+
+
 #mid-section{
     background-image: url(images/shapes/mid_background.jpg);
     background-repeat: no-repeat;
@@ -128,57 +192,6 @@ section{
     text-align: center;
 }
 
-footer{
-
-    height: 270px;
-    background-color: rgb(20, 22, 25);
-}
-footer p{
-    width: 100%;
-    text-align: center;
-    color: white;
-
-}
-
-#footer-title{
-
-    padding-top: 50px;
-    width: 100%;
-    text-align: center;
-    font-size: 2.2em;
-    font-weight: bold;
-}
-
-.icons{
-    height:min-content;
-    object-fit:none;
-}
-
-
-header{
-   
-    background-color: rgb(20, 22, 25);
-    height: 70px;
-    padding: 0 5%;
-
-    
-}
-header p{
-
-    font-size: 2.6em;
-    margin: 0;
-    padding-top: 25px;
-
-}
-img{
-    object-fit:cover;
-}
-
-.picture_section{
-    height: 70rem;
-    width: 50%;
-    box-sizing: border-box;
-}
 
 @media screen and (max-width: 1620px) {
     h1 {
@@ -210,30 +223,55 @@ img{
     h3, p {
         font-size: 1em;
     }
-    #top-section,#mid-section {
-        flex-direction: column;
-        padding: 0 30px;
+
+    section{
+        padding: 0 2rem;
     }
-    .text_section {
-        padding: 10px;
+
+    #top-section {
+        flex-direction: column;
+        padding-top: 0;
+    }
+
+    #mid-section {
+        flex-direction: column;
     }
 
     .picture_section{
-        height: 25rem;
+        height: 40rem;
         width: 100%;
         justify-content: end;
         display: flex;
-        margin-top: -250px;
+        margin-top: -150px;
+        
     }
 
-    .text_section{
+    #top-section>.text_section{
         width: 100%;
+        justify-content: start;
     }
     #end-section{
         margin: 0;
         gap: 2rem;
     }
     
+}
+
+@media screen and (max-width: 768px) {
+    .picture_section{
+        height: 25rem;
+        margin-top: -350px;
+    }
+    header{
+        padding: 0 2rem; 
+    }
+    #top-section>.text_section>div{
+        padding: 1rem;
+        border-radius: 40px;
+        background: rgba(256, 256, 256, 0.9); 
+        position: relative;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -251,9 +289,8 @@ img{
         padding: 10px 30px;
     }
 
-    .picture_section{
-        height: 10rem;
+    header{
+        padding: 0 1rem; 
     }
 }
-
 
