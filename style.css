@@ -1,18 +1,21 @@
 h1{
-    font-size: 4.3em;
+    font-size: 4.3rem;
     color: rgb(66, 66, 66);
 }
 h2{
-    font-size: 3em;
+    font-size: 3rem;
     color: rgb(66, 66, 66);
 }
 h3{
-    font-size: 1.6em;
+    font-size: 1.6rem;
     color: gray;
-    text-align: justify;
+}
+a{
+    color:white;
+    text-decoration: none;
 }
 p{
-    font-size: 1.4em;
+    font-size: 1.4rem;
     color: black;
     text-align: justify;
     font-weight: normal;
@@ -26,28 +29,27 @@ body{
 .orange{
     color: orangered;
 }
-.half-page{
-    width: 45%;   
-    padding: 0 2%;
-}
+
+
 section{
     display: flex;
-    padding: 0 5%;
 }
 
-#large-mid-image{
-    width: 100%;
-    height: 85%;
-    padding-top: 12vh;
+
+.text_section{
+    padding: 0 5%;
+    text-align: left;
+    width: 50%;
+    /* border: 1px solid black; */
 }
+
 
 .button{
 
-    color:white;
+    display: inline-flex;
     background-image: linear-gradient(orangered , salmon);
-    font-size: 1.5em;
+    font-size: 1.5rem;
     padding: 20px 60px;
-    text-decoration: none;
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
     border-top-left-radius: 40px;
@@ -63,8 +65,15 @@ section{
     background-image: url(images/shapes/mid_background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 80vh;
+    flex-direction: row-reverse;
+    padding-top: 10rem;
 }
+
+#mid-section .picture_section{
+    display: flex;
+    justify-content: end;
+}
+
 .center-aligned{
     text-align: center;
     padding: 0 20%;
@@ -172,8 +181,86 @@ header p{
 
 }
 img{
-    object-fit:contain;
+    object-fit:cover;
+}
 
+.picture_section{
+    height: 70rem;
+    width: 50%;
+}
+
+@media screen and (max-width: 1620px) {
+    h1 {
+        font-size: 3em;
+    }
+    h2 {
+        font-size: 2.5em;
+    }
+    h3, p {
+        font-size: 1.2em;
+    }
+    .box {
+        width: 45%;
+    }
+    .picture_section{
+        height: 50rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    h3, p {
+        font-size: 1em;
+    }
+    section,#mid-section {
+        flex-direction: column;
+        padding: 0 30px;
+    }
+    .text_section {
+        /* text-align: center; */
+        padding: 10px;
+    }
+    .box {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .picture_section{
+        height: 25rem;
+        width: 100%;
+        justify-content: end;
+        display: flex;
+        margin-top: -150px;
+    }
+    /* #mid-section .picture_section{
+        justify-content: end;
+    } */
+    .text_section{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.8em;
+    }
+    h3, p {
+        font-size: 0.9em;
+    }
+    .button {
+        font-size: 1.2em;
+        padding: 10px 30px;
+    }
+    .box {
+        width: 100%;
+    }
 }
 
 
