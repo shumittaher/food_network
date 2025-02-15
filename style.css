@@ -90,12 +90,14 @@ img{
 section{
     display: flex;
     box-sizing: border-box;
-
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .text_section{
     width: 50%;
     box-sizing: border-box;
+    display: flex;
 }
 
 
@@ -107,33 +109,29 @@ section{
 
 #top-section{
     background-image: url(images/shapes/top_background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     padding-top: 6rem;
 }
 
 #top-section>.text_section{
-    display: flex;
     justify-content: end;
 }
-#top-section>.text_section>div{
-    display: inline-block;
-    height: fit-content;
+#top-section .transperant_box{
     margin-top: 4rem;
 }
-
+.transperant_box{
+    display: inline-block;
+    height: fit-content;
+}
 
 #mid-section{
     background-image: url(images/shapes/mid_background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    flex-direction: row-reverse;
     padding-top: 10rem;
 }
 
 #mid-section .picture_section{
     display: flex;
     justify-content: end;
+    align-self: flex-end;
 }
 
 .grid-area{
@@ -205,8 +203,6 @@ section{
     }
     .picture_section{
         height: 50rem;
-        justify-content: end;
-
     }
     #end-section{
         margin: 0;
@@ -228,48 +224,66 @@ section{
         padding: 0 2rem;
     }
 
+    .picture_section{
+        height: 40rem;
+        display: flex;
+        width: 100%;
+        margin-top: -150px;
+    }
+
+    .text_section{
+        width: 100%;
+    }
+
     #top-section {
         flex-direction: column;
         padding-top: 0;
     }
-
-    #mid-section {
-        flex-direction: column;
-    }
-
-    .picture_section{
-        height: 40rem;
-        width: 100%;
+    #top-section>.picture_section{
         justify-content: end;
-        display: flex;
-        margin-top: -150px;
-        
     }
 
     #top-section>.text_section{
-        width: 100%;
         justify-content: start;
     }
+
+    #mid-section{
+        flex-direction: column-reverse;
+        padding-top: 3rem;
+    }
+    #mid-section>.picture_section{
+        justify-content: start;
+    }
+    #mid-section>.text_section{
+        justify-content: end;
+    }
+
     #end-section{
         margin: 0;
         gap: 2rem;
     }
-    
+    .transperant_box{
+        max-width: 50%;
+
+    }
 }
 
 @media screen and (max-width: 768px) {
     .picture_section{
         height: 25rem;
+    }
+    .picture_section{
         margin-top: -350px;
     }
     header{
         padding: 0 2rem; 
     }
-    #top-section>.text_section>div{
+    .transperant_box{
         padding: 1rem;
         border-radius: 40px;
         background: rgba(256, 256, 256, 0.9); 
         position: relative;
+        max-width: 70%;
     }
 
 }
@@ -291,6 +305,12 @@ section{
 
     header{
         padding: 0 1rem; 
+    }
+
+    .transperant_box{
+        max-width: 100%;
+        width: 100%;
+
     }
 }
 
