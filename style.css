@@ -112,6 +112,11 @@ section{
     height: 70rem;
     width: 50%;
     box-sizing: border-box;
+    transition: all .3s ease-out;
+}
+
+.outside_left{
+    transform: translateX(-100%);
 }
 
 #top-section{
