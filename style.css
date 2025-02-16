@@ -34,15 +34,14 @@ footer p{
     height: 5.3rem;
     display: flex;
     position: relative;
-    width: 100cqw;
     z-index: 10;
     box-sizing: border-box;
     align-items: end;
+    width: 100%;
 }
-#top_bar h2{
 
-    font-size: 2.6rem;
-    margin: 0;
+#top_bar h2{
+    margin: 0 5rem;
 }   
 
 #top_bar ul{
@@ -52,7 +51,6 @@ footer p{
 
     display: flex;
     align-items: center;
-    justify-content: center;
 
     position: absolute;
     width: 100%;
@@ -61,6 +59,15 @@ footer p{
 #top_bar ul li{
     list-style-type: none;
     margin: 0 1rem;
+}
+
+.center_navs{
+    justify-content: center;
+}
+
+.end_navs{
+    justify-content: end;
+    right: 5rem;
 }
 
 h1{
@@ -345,6 +352,11 @@ section{
     #footer-title{
         font-size: 1.5rem;
     }
+
+    #top_bar h2{
+
+        margin: 0 1rem;
+    }   
 }
 
 @media screen and (max-width: 480px) {
