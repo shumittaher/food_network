@@ -28,19 +28,39 @@ footer p{
 }
 
 
-header{
+#top_bar{
    
     background-color: rgb(20, 22, 25);
     height: 5.3rem;
-    padding: 0 7rem;
-
-    
+    display: flex;
+    position: relative;
+    width: 100cqw;
+    z-index: 10;
+    box-sizing: border-box;
+    align-items: end;
 }
-header h2{
+#top_bar h2{
 
     font-size: 2.6rem;
     margin: 0;
-    padding-top: 2.6rem;
+}   
+
+#top_bar ul{
+    margin: 0;
+    padding: 1rem 0;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    width: 100%;
+}
+
+#top_bar ul li{
+    list-style-type: none;
+    margin: 0 1rem;
 }
 
 h1{
@@ -70,6 +90,7 @@ body{
     font-family: 'Nunito', sans-serif;
     box-sizing: border-box;
     overflow-x: hidden;
+    margin:0
 }
 
 .button{
@@ -140,8 +161,6 @@ section{
     background-image: url(images/shapes/mid_background.jpg);
     padding-top: 10rem;
 }
-
-
 
 #mid-section .picture_section{
     display: flex;
@@ -217,8 +236,12 @@ section{
 .box,.button,.bottom-box>a{
     transition: all 0.3s ease-in-out;
 }
-.box:hover,.button:hover,.bottom-box>a:hover{
+.box:hover,.button:hover{
     transform: scale(1.05);
+}
+
+.bottom-box>a:hover{
+    transform: scale(1.25);
 }
 
 @media screen and (max-width: 1620px) {
@@ -308,9 +331,8 @@ section{
     .picture_section{
         margin-top: -350px;
     }
-    header{
-        padding: 0 2rem; 
-    }
+
+    
     .transperant_box{
         padding: 1rem;
         border-radius: 40px;
@@ -338,10 +360,6 @@ section{
     .button {
         font-size: 1.2em;
         padding: 10px 30px;
-    }
-
-    header{
-        padding: 0 1rem; 
     }
 
     .transperant_box{
